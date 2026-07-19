@@ -113,4 +113,11 @@ app.post('/api/tickets/:id/comments', requireAuth, (req, res) => {
 });
 
 app.use((_req, res) => res.status(404).json({ message: 'Route not found.' }));
-app.listen(port, () => console.log(`SmartDesk API listening on http://localhost:${port}`));
+
+// Vercel invokes the Express app as a serverless function. Keep a local
+// listener only when this module is run directly with `npm start`.
+if (!process.env.VERCEL) {
+  app.listen(port, () => console.log(`SmartDesk API listening on http://localhost:${port}`));
+}
+
+export default app;
