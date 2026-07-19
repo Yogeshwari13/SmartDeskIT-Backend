@@ -1,0 +1,120 @@
+{
+  "users": [
+    {
+      "id": "admin-001",
+      "name": "Yogeshwari D",
+      "email": "admin@smartdesk.ai",
+      "department": "Operations",
+      "role": "admin",
+      "passwordHash": "$2a$12$3f0fnSIalX73759KzjA.aevemSKt3gmEN59Sf1cklw5ae6gMDXd8C",
+      "createdAt": "2026-07-17T09:00:00.000Z"
+    },
+    {
+      "id": "user-001",
+      "name": "Dineshkumar D",
+      "email": "dineshdaya@smartdesk.ai",
+      "department": "IT",
+      "role": "IT Support",
+      "passwordHash": "$2a$12$3f0fnSIalX73759KzjA.aevemSKt3gmEN59Sf1cklw5ae6gMDXd8C",
+      "createdAt": "2026-07-17T09:00:00.000Z"
+    },
+    {
+      "id": "user-002",
+      "name": "Mahendra U",
+      "email": "mahendra@smartdesk.ai",
+      "department": "Operations",
+      "role": "user",
+      "passwordHash": "$2a$12$3f0fnSIalX73759KzjA.aevemSKt3gmEN59Sf1cklw5ae6gMDXd8C",
+      "createdAt": "2026-07-17T09:00:00.000Z"
+    }
+  ],
+  "tickets": [
+    {
+      "id": "TKT-1049",
+      "title": "AD account locked",
+      "summary": "AD account locked",
+      "description": "AD account locked",
+      "category": "Access",
+      "priority": "Medium",
+      "team": "IT Support",
+      "status": "Resolved",
+      "requester": "Yogeshwari D",
+      "requesterId": "admin-001",
+      "createdAt": "2026-07-18T17:27:52.573Z",
+      "updatedAt": "2026-07-18T17:34:46.029Z",
+      "comments": 0,
+      "suggestedSolution": "Review the access troubleshooting guide and verify the requester’s device and account configuration.",
+      "resolution": "Ticket TKT-1049 has been resolved. The access issue was addressed by IT Support. The requester was notified and the incident is documented for audit purposes."
+    },
+    {
+      "id": "TKT-1048",
+      "title": "Unable to connect to office Wi-Fi",
+      "summary": "Priya cannot connect her laptop to the Office-Secure network.",
+      "description": "I cannot connect my laptop to office Wi-Fi.",
+      "category": "Network",
+      "priority": "High",
+      "team": "IT Infrastructure",
+      "status": "In Progress",
+      "requester": "Priya Sharma",
+      "requesterId": "user-001",
+      "department": "Operations",
+      "createdAt": "2026-07-17T12:00:00.000Z",
+      "updatedAt": "2026-07-17T12:17:00.000Z",
+      "comments": 1,
+      "suggestedSolution": "Check network and account settings.",
+      "resolution": null
+    }
+  ],
+  "history": [
+    {
+      "id": "2e568436-81f2-47fc-a8af-14faaf789cde",
+      "ticketId": "TKT-1049",
+      "type": "status_changed",
+      "message": "Status changed to Resolved",
+      "user": "Yogeshwari D",
+      "createdAt": "2026-07-18T17:34:46.027Z"
+    },
+    {
+      "id": "ff842067-2850-432d-a8fd-f38be4cb314c",
+      "ticketId": "TKT-1049",
+      "type": "status_changed",
+      "message": "Status changed to In Progress",
+      "user": "Yogeshwari D",
+      "createdAt": "2026-07-18T17:34:39.397Z"
+    },
+    {
+      "id": "98aeaf4f-bc47-437c-9631-2fc457814058",
+      "ticketId": "TKT-1049",
+      "type": "created",
+      "message": "Ticket created",
+      "user": "Yogeshwari D",
+      "createdAt": "2026-07-18T17:27:52.575Z"
+    },
+    {
+      "id": "history-002",
+      "ticketId": "TKT-1048",
+      "type": "status_changed",
+      "message": "Status changed to In Progress",
+      "user": "Yogeshwari D",
+      "createdAt": "2026-07-17T12:17:00.000Z"
+    },
+    {
+      "id": "history-001",
+      "ticketId": "TKT-1048",
+      "type": "created",
+      "message": "Ticket created",
+      "user": "Priya Sharma",
+      "createdAt": "2026-07-17T12:00:00.000Z"
+    }
+  ],
+  "comments": [
+    {
+      "id": "comment-001",
+      "ticketId": "TKT-1048",
+      "message": "We are looking into this now.",
+      "author": "Yogeshwari D",
+      "authorId": "admin-001",
+      "createdAt": "2026-07-17T12:18:00.000Z"
+    }
+  ]
+}
