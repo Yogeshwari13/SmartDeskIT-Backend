@@ -10,7 +10,8 @@ import { enrichTicket, resolutionNote } from './services/ticketAi.js';
 
 const app = express();
 const port = process.env.PORT || 5000;
-app.use(cors({ origin: process.env.CLIENT_ORIGIN || 'http://localhost:5173' }));
+const clientOrigin = (process.env.CLIENT_ORIGIN || 'http://localhost:5173').replace(/\/+$/, '');
+app.use(cors({ origin: clientOrigin }));
 app.use(express.json());
 app.use(morgan('dev'));
 
